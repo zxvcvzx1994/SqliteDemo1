@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <TextView
+            android:text="id"
+            android:layout_marginLeft="8px"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:id="@+id/txtid"
+            android:textSize="40px"
+            android:layout_width="88dp"
+            android:layout_weight="1"
+            android:layout_height="25dp"
+
+            android:layout_alignParentTop="true"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtname"
+            tools:layout_constraintBaseline_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="89dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20px"
+        android:layout_toEndOf="@+id/txtid"
+        android:layout_toRightOf="@+id/txtid"
+        android:layout_weight="3.5"
+        android:layout_x="134dp"
+        android:layout_y="30dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Name"
+        android:textSize="40px"
+        app:layout_constraintLeft_toRightOf="@+id/txtid"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/txtaddress"
+        android:layout_width="128dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20px"
+        android:layout_alignParentTop="true"
+
+        android:layout_weight="3"
+        android:layout_x="223dp"
+        android:layout_y="0dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Address"
+        android:textSize="40px"
+        app:layout_constraintLeft_toRightOf="@+id/txtname"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtname"
+        tools:layout_constraintBaseline_creator="1" />
+
+    <TextView
+        android:id="@+id/txtsalary"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/txtaddress"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/txtaddress"
+        android:layout_weight="2.5"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Salary"
+        android:textSize="40px"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtaddress"
+        app:layout_constraintLeft_toRightOf="@+id/txtaddress"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBaseline_creator="1" />
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
+
+
